@@ -37,7 +37,22 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "rest_framework_swagger",
+    "drf_yasg",
+    "converter_app",
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
+    "DEFAULT_THROTTLE_RATES": {
+        "anon": "20/min",
+    }
+}
+
+SWAGGER_SETTINGS = {
+   "USE_SESSION_AUTH": False
+}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
