@@ -44,3 +44,4 @@ texttable==1.6.4
 uritemplate==4.1.1
 urllib3==1.26.12
 websocket-client==0.59.0
+whitenoise==6.2.0
