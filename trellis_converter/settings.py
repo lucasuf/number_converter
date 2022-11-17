@@ -127,9 +127,6 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = FRONTEND_DIR / "static/"
-STATICFILES_DIRS = [
-    FRONTEND_DIR / "docs"
-]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
