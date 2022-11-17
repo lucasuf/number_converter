@@ -14,7 +14,8 @@ from pathlib import Path
 from prettyconf import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parents[2]
+BASE_DIR = Path(__file__).resolve().parent.parents
+PROJECT_DIR = Path(__file__).resolve().parent.parents[1]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -124,7 +125,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = PROJECT_DIR / "staticfiles"
 STATIC_URL = "static/"
 
 # Enable WhiteNoise's GZip compression of static assets.
