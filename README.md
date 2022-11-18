@@ -1,7 +1,10 @@
 # Number to English Words
 This is a Django application that **exposes two endpoints for converting a given number to words in english**.
 ## Demo
-The aplication is deployed under XXX heroku for public access
+The application is deployed under the following link on heroku for public access:
+```
+https://number-converter.herokuapp.com/docs/
+```
 ## Installation & Run
 ```bash
 # Download the project
@@ -92,4 +95,4 @@ curl -X 'POST' \
 - [x] Write tests for the view class.
 - [x] Add API throttling (has we do not have auth, use API throttling to prevent production issues).
 - [x] Add /docs with Swagger.
-- [ ] Deploy application to heroku.
+- [x] Deploy application to heroku.
